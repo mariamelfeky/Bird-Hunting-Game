@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/gun.css" rel="stylesheet" />
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <style>
+    .blue {
+      text-align: center;
+    }
+
+    .blue,
+    .black,
+    .red {
+      width: 150px;
+      height: 140px;
+    }
+
+    #dialog-confirm {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- erased from section and added here-->
+  <div id="progressBar">
+    <div id="timerBar"></div>
+  </div>
+  <!-- 12-2-2020  add code MG-->
+  <div id="score">
+    <h3>score</h3>
+    <span id="scoreNum"></span>
+  </div>
+
+
+  <!-- #-->
+  <section>
+    
+ <div id="welcomediv">
+  <h2></h2>
+
+  <!-- <img id="howToPlay"src="images/bomb2.gif"/> -->
+  <div id="howToPlay">
+        <div>
+            <img src="images/black.gif"/>
+           <span><img src="images/3.jpeg"></span>
+      </div>
+        <div>
+            <img src="images/red.gif"/>
+            <span><img src="images/2.jpeg"></span>
+      </div>
+      <div >
+              <img src="images/blueleft.gif"/>
+             <span><img src="images/1.jpeg">   </span> 
+      </div>
+</div>
+
+ 
+  <input type="button" value="Start" />
+</div>
+
+
+  </section>
+
+  <div class="imgContainer" style="position: fixed; cursor:url(/images/hunt.png),auto;"></div>
+
+
+  <div id="dialog-confirm" title="End Game">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Congratelation, you won
+    </p>
+  </div>
+  <!-- sound audios-->
+  <audio id="redaudio" preload="auto">
+    <source src="audio/red.mp3">
+    </source>
+  </audio>
+
+  <audio id="blackaudio" preload="auto">
+    <source src="audio/black.mp3">
+    </source>
+  </audio>
+  <audio id="bgmusic" preload="auto" loop="loop">
+    <source src="audio/mcdonald.mp3">
+    </source>
+  </audio>
+  <audio id="gunsound" preload="auto">
+    <source src="audio/gun.mp3">
+    </source>
+  </audio>
+
+
+  <script src="js/movingbirds.js"></script>
+  <script src="js/bom.js"></script>
+  <script src="js/startAndEndGame.js"></script>
+
+</body>
+
+</html>
